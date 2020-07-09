@@ -1,5 +1,6 @@
 import 'package:bookmarks/model/bookmark.dart';
 import 'package:bookmarks/util/navigation_util.dart';
+import 'package:bookmarks/widget/bookmarks_grid_widget.dart';
 import 'package:bookmarks/widget/bookmarks_list_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
       appBar: AppBar(
         title: Text("My Bookmarks"),
       ),
-      body: BookmarksListWidget(bookmarksList),
+      body: BookmarksGridWidget(bookmarksList),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton.extended(
         icon: Icon(Icons.add),
