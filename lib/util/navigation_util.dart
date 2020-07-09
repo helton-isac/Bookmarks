@@ -8,7 +8,7 @@ void navigateToViewBookmarkPage(Bookmark bookmark, BuildContext context) {
       .push(MaterialPageRoute(builder: (context) => ViewBookmarkPage(bookmark)));
 }
 
-void navigateToAddBookmarkPage(BuildContext context) {
-  Navigator.of(context)
+Future navigateToAddBookmarkPage(BuildContext context) {
+  return Navigator.of(context)
       .push(MaterialPageRoute(builder: (context) => AddBookmarkPage()));
 }
